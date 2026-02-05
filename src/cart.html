@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Artisan Pizza Co.</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container flex align-center justify-between" style="height: 100%;">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-pizza-slice icon"></i> Artisan Pizza Co.
+            </a>
+            <div class="flex align-center gap-2">
+                <a href="menu.html" style="font-weight: 500;">Back to Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="section-title" style="margin-top: 40px;">Your Cart</h1>
+
+        <div class="cart-layout">
+            <!-- Items -->
+            <div class="cart-items">
+                <!-- Item 1 -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Truffle Pizza">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-title">Truffle Mushroom</div>
+                        <div class="item-subtitle">Large 14" • Regular Crust</div>
+                    </div>
+                    <div class="item-controls">
+                        <div class="qty-control">
+                            <button class="qty-btn"><i class="fas fa-minus"></i></button>
+                            <span class="qty-val">1</span>
+                            <button class="qty-btn" style="color: var(--primary-red);"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="item-price">$18.99</div>
+                        <button style="color: #aaa;"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Spicy Calabrese">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-title">Spicy Calabrese</div>
+                        <div class="item-subtitle">Medium 12" • Thin Crust</div>
+                    </div>
+                    <div class="item-controls">
+                        <div class="qty-control">
+                            <button class="qty-btn"><i class="fas fa-minus"></i></button>
+                            <span class="qty-val">1</span>
+                            <button class="qty-btn" style="color: var(--primary-red);"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="item-price">$16.50</div>
+                        <button style="color: #aaa;"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checkout -->
+            <div class="checkout-panel">
+                <h3 style="margin-bottom: 20px;">Delivery Details</h3>
+
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-input" placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Address</label>
+                    <input type="text" class="form-input" placeholder="123 Pizza Street, Apt 4B">
+                </div>
+
+                <div class="form-group">
+                    <div style="display: flex; gap: 16px;">
+                        <div style="flex: 1;">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-input" placeholder="New York">
+                        </div>
+                        <div style="width: 100px;">
+                            <label class="form-label">Zip</label>
+                            <input type="text" class="form-input" placeholder="10001">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$35.49</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery Fee</span>
+                        <span>$3.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span>$2.80</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span>$42.28</span>
+                    </div>
+                </div>
+
+                <a href="tracker.html" class="btn btn-primary" style="width: 100%; text-align: center;">Place Order</a>
+                <p style="text-align: center; font-size: 0.8rem; color: #888; margin-top: 12px;">Secure Checkout</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2024 Artisan Pizza Co. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own | Artisan Pizza Co.</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/customizer.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container flex align-center justify-between" style="height: 100%;">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-pizza-slice icon"></i> Artisan Pizza Co.
+            </a>
+            <div class="flex align-center gap-2">
+                <a href="menu.html" style="font-weight: 500;">Back to Menu</a>
+                <a href="cart.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">
+                    <i class="fas fa-shopping-basket"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="builder-layout">
+        <!-- Visual -->
+        <div class="pizza-visual-area">
+            <div class="pizza-preview" id="pizzaPreview">
+                <div class="crust-base"></div>
+                <div class="sauce-layer"></div>
+                <div class="cheese-layer"></div>
+                <!-- Toppings placeholders -->
+                <div class="ingredient pepperoni" style="top: 30%; left: 40%"></div>
+                <div class="ingredient pepperoni" style="top: 50%; left: 60%"></div>
+                <div class="ingredient mushroom" style="top: 60%; left: 30%"></div>
+                <div class="ingredient pepper" style="top: 40%; left: 70%"></div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls-area">
+            <div class="controls-header">
+                <h2>Custom Pizza</h2>
+                <p style="color: var(--text-muted);">Craft your perfect slice.</p>
+            </div>
+
+            <div class="controls-tabs">
+                <div class="tab active">Size & Crust</div>
+                <div class="tab">Toppings</div>
+                <div class="tab">Sauce</div>
+            </div>
+
+            <div class="options-container">
+                <!-- Size -->
+                <div class="option-group">
+                    <h3>Select Size</h3>
+                    <div class="option-grid">
+                        <label class="option-card selected">
+                            <input type="radio" name="size" checked>
+                            <div>
+                                <strong>Small 10"</strong><br>
+                                <span style="font-size:0.8rem; color: #666;">$10.00</span>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="size">
+                            <div>
+                                <strong>Medium 12"</strong><br>
+                                <span style="font-size:0.8rem; color: #666;">$14.00</span>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="size">
+                            <div>
+                                <strong>Large 14"</strong><br>
+                                <span style="font-size:0.8rem; color: #666;">$18.00</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Crust -->
+                <div class="option-group">
+                    <h3>Select Crust</h3>
+                    <div class="option-grid">
+                        <label class="option-card selected">
+                            <input type="radio" name="crust" checked>
+                            Original Hand Tossed
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="crust">
+                            Thin Crust
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="crust">
+                            Cheese Stuffed (+$2.50)
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Toppings Demo -->
+                <div class="option-group">
+                    <h3>Toppings ($1.50 ea)</h3>
+                    <div class="option-grid">
+                        <label class="option-card selected">
+                            <input type="checkbox" checked>
+                            Pepperoni
+                        </label>
+                        <label class="option-card selected">
+                            <input type="checkbox" checked>
+                            Mushrooms
+                        </label>
+                        <label class="option-card">
+                            <input type="checkbox">
+                            Onions
+                        </label>
+                        <label class="option-card selected">
+                            <input type="checkbox" checked>
+                            Green Peppers
+                        </label>
+                        <label class="option-card">
+                            <input type="checkbox">
+                            Bacon
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-footer">
+                <div>
+                    <span style="display: block; font-size: 0.9rem; color: #666;">Total</span>
+                    <span class="total-price">$18.50</span>
+                </div>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

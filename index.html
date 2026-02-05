@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Pizza Co. | Authentic Flavors</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container flex align-center justify-between" style="height: 100%;">
+            <a href="index.html" class="logo">
+                <i class="fas fa-pizza-slice icon"></i> Artisan Pizza Co.
+            </a>
+
+            <nav class="nav-links">
+                <a href="src/menu.html">Menu</a>
+                <a href="#">Deals</a>
+                <a href="#">Locations</a>
+                <a href="#">About Us</a>
+            </nav>
+
+            <div class="flex align-center gap-2">
+                <div
+                    style="background: var(--light-bg); padding: 8px 16px; border-radius: 50px; display: flex; align-items: center; gap: 8px; width: 200px;">
+                    <i class="fas fa-search" style="color: #999;"></i>
+                    <input type="text" placeholder="Search your pizza..."
+                        style="border: none; background: transparent; outline: none; width: 100%; font-size: 0.9rem;">
+                </div>
+                <a href="src/cart.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
+                    <i class="fas fa-shopping-basket" style="margin-right: 8px;"></i> Cart (0)
+                </a>
+                <button style="font-size: 1.2rem; color: #555;"><i class="fas fa-user-circle"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-section" style="background: #111;">
+        <div class="container hero">
+            <div class="hero-content">
+                <span
+                    style="color: var(--secondary-orange); font-weight: 700; letter-spacing: 1px; font-size: 0.9rem; display: block; margin-bottom: 12px;">🔥
+                    NEW: TRUFFLE SEASON IS HERE</span>
+                <h1>Authentic Flavors, <br><span>Delivered Hot.</span></h1>
+                <p>Experience the finest ingredients and traditional recipes from our kitchen to your doorstep. Freshly
+                    baked every single time.</p>
+                <div class="flex gap-2">
+                        <a href="src/menu.html" class="btn btn-primary">Order Now <i class="fas fa-arrow-right"
+                            style="margin-left: 8px; font-size: 0.9rem;"></i></a>
+                        <a href="src/menu.html" class="btn btn-outline">View Menu</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Delicious Pizza">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <div class="container">
+        <div class="features-strip grid gap-2" style="grid-template-columns: repeat(4, 1fr);">
+            <div class="feature-card">
+                <i class="fas fa-shipping-fast feature-icon"></i>
+                <div class="feature-title">30 Mins</div>
+                <div class="feature-desc">Delivery Guarantee</div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-star feature-icon" style="color: var(--secondary-orange);"></i>
+                <div class="feature-title">4.9/5 Rating</div>
+                <div class="feature-desc">10k+ Happy Foodies</div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf feature-icon" style="color: #4CAF50;"></i>
+                <div class="feature-title">Organic Only</div>
+                <div class="feature-desc">Premium Ingredients</div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-fire feature-icon"></i>
+                <div class="feature-title">Brick Oven</div>
+                <div class="feature-desc">Traditional Prep</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Specials -->
+    <div class="container specials">
+        <div class="flex justify-between align-center">
+            <div>
+                <h2 class="section-title">Today's Specials</h2>
+                <span class="section-subtitle">Limited time offers from our Chef</span>
+            </div>
+                <a href="src/menu.html" style="color: var(--primary-red); font-weight: 600;">Explore All <i
+                    class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <div class="specials-grid">
+            <!-- Item 1 -->
+            <div class="pizza-card">
+                <span class="card-badge badge-red">Most Popular</span>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Truffle Mushroom">
+                </div>
+                <div class="card-info">
+                    <div class="pizza-title">
+                        Truffle Mushroom
+                        <span class="pizza-price">$18.99</span>
+                    </div>
+                    <p class="pizza-desc">Earthy black truffle oil, wild porcini mushrooms, fresh mozzarella, and a dash
+                        of roasted garlic.</p>
+                    <button class="add-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="pizza-card">
+                <span class="card-badge badge-orange">Chef's Choice</span>
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Spicy Calabrese">
+                </div>
+                <div class="card-info">
+                    <div class="pizza-title">
+                        Spicy Calabrese
+                        <span class="pizza-price">$16.50</span>
+                    </div>
+                    <p class="pizza-desc">Spicy Italian salami, crushed red pepper flakes, sweet honey drizzle, and
+                        fresh basil leaves.</p>
+                    <button class="add-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="pizza-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Garden Pesto">
+                </div>
+                <div class="card-info">
+                    <div class="pizza-title">
+                        Garden Pesto
+                        <span class="pizza-price">$15.99</span>
+                    </div>
+                    <p class="pizza-desc">House-made basil pesto base, toasted pine nuts, heirloom cherry tomatoes, and
+                        goat cheese crumbles.</p>
+                    <button class="add-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Banner -->
+    <div class="container">
+        <div class="promo-banner">
+            <h2 style="font-size: 3rem; margin-bottom: 16px;">Get 20% off your first order!</h2>
+            <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 32px;">Use code <strong
+                    style="color: var(--primary-red);">WELCOME20</strong> at checkout.</p>
+            <a href="#" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.1rem;">Claim Discount</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: white; margin-bottom: 24px;">
+                        <i class="fas fa-pizza-slice icon"></i> Artisan Pizza Co.
+                    </div>
+                    <p style="color: #999; font-size: 0.9rem; line-height: 1.6;">
+                        Crafting authentic, brick-oven pizzas using traditional Italian methods and locally sourced
+                        organic ingredients.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Our Menu</a></li>
+                        <li><a href="#">Current Deals</a></li>
+                        <li><a href="#">Find a Location</a></li>
+                        <li><a href="#">Catering Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Join the Pizza Club</h4>
+                    <p style="color: #999; font-size: 0.9rem; margin-bottom: 16px;">Subscribe for exclusive offers and
+                        news.</p>
+                    <form class="flex gap-1">
+                        <input type="email" placeholder="Your email" class="newsletter-input" style="margin-bottom: 0;">
+                        <button type="button" class="btn btn-primary" style="padding: 0 20px;"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Artisan Pizza Co. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

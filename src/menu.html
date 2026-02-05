@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Artisan Pizza Co.</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container flex align-center justify-between" style="height: 100%;">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-pizza-slice icon"></i> Artisan Pizza Co.
+            </a>
+
+            <nav class="nav-links">
+                <a href="menu.html" style="color: var(--primary-red);">Menu</a>
+                <a href="#">Deals</a>
+                <a href="#">Locations</a>
+                <a href="#">About Us</a>
+            </nav>
+
+            <div class="flex align-center gap-2">
+                <a href="customizer.html" class="btn btn-secondary" style="padding: 8px 20px; font-size: 0.9rem;">
+                    <i class="fas fa-tools" style="margin-right: 8px;"></i> Build Your Own
+                </a>
+                <a href="cart.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
+                    <i class="fas fa-shopping-basket" style="margin-right: 8px;"></i> Cart (0)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Hand-tossed, stone-fired, and made with love.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Filters -->
+        <div class="filter-bar">
+            <button class="filter-btn active">All Pizzas</button>
+            <button class="filter-btn">Vegetarian</button>
+            <button class="filter-btn">Meat Lovers</button>
+            <button class="filter-btn">Drinks & Sides</button>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="pizza-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Truffle Mushroom">
+                </div>
+                <div class="card-info">
+                    <div class="pizza-title">Truffle Mushroom <span>$18.99</span></div>
+                    <p class="pizza-desc">Earthy black truffle oil, wild porcini mushrooms, fresh mozzarella.</p>
+                    <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="pizza-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Spicy Calabrese">
+                </div>
+                <div class="card-info">
+                    <div class="pizza-title">Spicy Calabrese <span>$16.50</span></div>
+                    <p class="pizza-desc">Spicy Italian salami, red chili peppers, honey drizzle.</p>
+                    <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="pizza-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Garden Pesto">
+                </div>
+                <div class="card-info">
+                    <div class="pizza-title">Garden Pesto <span>$15.99</span></div>
+                    <p class="pizza-desc">Basil pesto base, pine nuts, cherry tomatoes, goat cheese.</p>
+                    <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="pizza-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Classic Pepperoni">
+                </div>
+                <div class="card-info">
+                    <div class="pizza-title">Classic Pepperoni <span>$14.50</span></div>
+                    <p class="pizza-desc">Double pepperoni, mozzarella, signature tomato sauce.</p>
+                    <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="pizza-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Margherita">
+                </div>
+                <div class="card-info">
+                    <div class="pizza-title">Margherita <span>$12.99</span></div>
+                    <p class="pizza-desc">Fresh basil, buffalo mozzarella, extra virgin olive oil.</p>
+                    <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="pizza-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="BBQ Chicken">
+                </div>
+                <div class="card-info">
+                    <div class="pizza-title">BBQ Chicken <span>$17.50</span></div>
+                    <p class="pizza-desc">Smoky BBQ sauce, grilled chicken, red onions, cilantro.</p>
+                    <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; margin-bottom: 60px;">
+            <p style="color: var(--text-muted); margin-bottom: 20px;">Want something unique?</p>
+            <a href="customizer.html" class="btn btn-outline"
+                style="color: var(--text-main); border-color: var(--text-main);">
+                <i class="fas fa-magic" style="margin-right: 8px;"></i> Create Your Own Pizza
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2024 Artisan Pizza Co. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
